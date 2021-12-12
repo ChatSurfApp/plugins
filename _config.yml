@@ -4,3 +4,6 @@ collections:
     plugins:
         output: true
         permalink: /:name
+    categories:
+        output: true
+        permalink: /categories/:name
