@@ -1,3 +1,5 @@
+baseurl: "/plugins"
+url: "https://ChatSurfApp.github.io"
 collections:
     plugins:
         output: true
