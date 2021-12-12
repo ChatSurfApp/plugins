@@ -14,5 +14,12 @@ layout: base
   {{ page.title }}
   <a href="{{ page.url | relative_url }}.js" class="btn btn-primary">Download</a>
 </h1>
-<p>By {{ page.author }} - Version: {{ page.version }}</p>
+<p>
+  By {{ page.author }}
+  {% if page.verified %}
+  {% include verifiedmark.html %}
+  {% endif %}
+  -
+  Version: {{ page.version }}
+</p>
 <p>{{ page.description | markdownify }}</p>
