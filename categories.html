@@ -1,0 +1,11 @@
+---
+layout: base
+---
+
+<h1>Categories</h1>
+
+<div class="d-flex flex-wrap">
+{% for category in site.categories %}
+  <a class="mx-2" href="{{ category.url | relative_url }}">{{ category.category }}</a>
+{% endfor %}
+</div>
