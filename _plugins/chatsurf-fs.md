@@ -10,12 +10,12 @@ description: |
     
     ```js
     // Setup
-    const config = require(\"./chatsurf-fs\").loadConfig(__filename);
+    const config = require("./chatsurf-fs").loadConfig(__filename);
     
     // Getter
-    config.get(\"path.to.something[0]\");
+    config.get("path.to.something[0]");
     
     // Setter
-    config.set(\"path.to.something[0]\", \"my data\");
+    config.set("path.to.something[0]", "my data");
     ```
 ---
