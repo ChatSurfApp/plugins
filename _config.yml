@@ -1,0 +1,4 @@
+collections:
+    plugins:
+        output: true
+        permalink: /:name
