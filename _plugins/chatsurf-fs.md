@@ -3,6 +3,7 @@ layout: plugin
 title: ChatSurf File System
 author: ChatSurf
 version: 1.0.0
+category: library
 description: |
     A basic json config storage plugin
     
