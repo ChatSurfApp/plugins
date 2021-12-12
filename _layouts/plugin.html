@@ -2,6 +2,14 @@
 layout: base
 ---
 
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/plugins">Home</a></li>
+    <li class="breadcrumb-item"><a href="/plugins/{{ page.category }}">{{ page.category }}</a></li>
+    <li class="breadcrumb-item active">{{ page.title }}</li>
+  </ol>
+</nav>
+
 <h1>
   {{ page.title }}
   <a href="{{ page.url | relative_url }}.js" class="btn btn-primary">Download</a>
