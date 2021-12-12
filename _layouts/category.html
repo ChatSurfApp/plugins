@@ -15,7 +15,12 @@ layout: base
   <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">{{ plugin.title }}</h5>
-      <p class="card-text">By {{ plugin.author }}</p>
+      <p class="card-text">
+        By {{ plugin.author }}
+        {% if page.verified %}
+        {% include verifiedmark.html %}
+        {% endif %}
+      </p>
       <a href="{{ plugin.url | relative_url }}" class="btn btn-primary">View</a>
       <a href="{{ plugin.url | relative_url }}.js" class="btn btn-primary">Download</a>
     </div>
