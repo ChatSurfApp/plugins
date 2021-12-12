@@ -3,7 +3,7 @@ layout: plugin
 title: ChatSurf File System
 author: ChatSurf
 version: 1.0.0
-description: "
+description: |
     A basic json config storage plugin
     
     ## Usage
@@ -18,5 +18,4 @@ description: "
     // Setter
     config.set(\"path.to.something[0]\", \"my data\");
     ```
-    "
 ---
