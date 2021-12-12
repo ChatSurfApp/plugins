@@ -9,14 +9,17 @@ layout: base
   </ol>
 </nav>
 
+<div class="d-flex flex-wrap">
 {% for plugin in site.plugins %}
 {% if plugin.category == page.category %}
   <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">{{ plugin.title }}</h5>
-      <p class="card-text"></p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <p class="card-text">By {{ plugin.author }}</p>
+      <a href="{{ plugin.url | relative_url }}" class="btn btn-primary">View</a>
+      <a href="{{ plugin.url | relative_url }}.js" class="btn btn-primary">Download</a>
     </div>
   </div>
 {% endif %}
 {% endfor %}
+</div>
