@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/plugins">Home</a></li>
+    <li class="breadcrumb-item active">{{ page.category }}</li>
+  </ol>
+</nav>
+
+{% for plugin in site.plugins %}
+{% if plugin.category == page.category %}
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{ plugin.title }}</h5>
+      <p class="card-text"></p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+{% endif %}
+{% endfor %}
