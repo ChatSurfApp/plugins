@@ -16,7 +16,7 @@ description: "
     config.get(\"path.to.something[0]\");
     
     // Setter
-    config.set(\"path.to.something[0]\", "my data");
+    config.set(\"path.to.something[0]\", \"my data\");
     ```
     "
 ---
