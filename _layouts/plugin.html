@@ -12,6 +12,6 @@
       <a href="{{ page.url | relative_url }}.js" class="btn btn-primary">Download</a>
     </h1>
     <p>By {{ page.author }} - Version: {{ page.version }}</p>
-    <p>{{ page.description }}</p>
+    <p>{{ page.description | markdownify }}</p>
   </body>
 </html>
