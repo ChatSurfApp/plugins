@@ -1,3 +1,6 @@
+---
+layout: none
+---
 [
 {% for plugin in site.plugins %}
   {
