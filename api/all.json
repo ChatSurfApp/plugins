@@ -2,8 +2,7 @@
 layout: none
 ---
 [
-{% for plugin in site.plugins %}
-  {
+{% for plugin in site.plugins %}{
     "title": "{{ plugin.title }}",
     "author": {
       "name": "{{ plugin.author }}",
@@ -13,6 +12,5 @@ layout: none
     "version": "{{ plugin.version }}",
     "category": "{{ plugin.category }}",
     "description": {{ plugin.description | jsonify }}
-  }
-{% endfor %}
+  }{% if forloop.rindex != 1 %},{% endif %}{% endfor %}
 ]
