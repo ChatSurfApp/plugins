@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Adding Plugins
+permalink: /add
 ---
 
 # How to add your plugins
