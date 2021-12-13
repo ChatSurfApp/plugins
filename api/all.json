@@ -1,8 +1,8 @@
 ---
 layout: none
 ---
-[
-{% for plugin in site.plugins %}{
+[{% for plugin in site.plugins %}
+  {
     "title": "{{ plugin.title }}",
     "author": {
       "name": "{{ plugin.author }}",
