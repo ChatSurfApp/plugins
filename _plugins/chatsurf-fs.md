@@ -3,6 +3,7 @@ layout: plugin
 title: ChatSurf File System
 author: ChatSurf
 verified: true
+recommended: true
 version: 1.0.0
 category: library
 description: |

@@ -1,5 +1,8 @@
-@import "bootstrap";
+---
+---
 
-$theme-colors (
-  "primary": #3A1585
+$theme-colors: (
+    "primary": #3a1585
 );
+
+@import "bootstrap";
