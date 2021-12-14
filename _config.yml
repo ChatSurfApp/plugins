@@ -1,5 +1,12 @@
 baseurl: "/plugins"
 url: "https://ChatSurfApp.github.io"
+
+nav:
+    - name: Categories
+      url: /plugins/categories
+    - name: Adding Plugins
+      url: /plugins/add
+
 collections:
     plugins:
         output: true
