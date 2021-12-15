@@ -23,3 +23,12 @@ layout: base
   Version: {{ page.version }}
 </p>
 <p>{{ page.description | markdownify }}</p>
+
+<script src="https://utteranc.es/client.js"
+        repo="ChatSurfApp/plugins"
+        issue-term="{{ page.url | split: "/" | last }}"
+        label="Plugin Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
