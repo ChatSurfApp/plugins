@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Developers
+category: none
 permalink: /developers
 ---
 
@@ -8,7 +9,7 @@ permalink: /developers
 
 <div class="d-flex flex-wrap">
   {% for category in categories %}
-  {% if category.name %}
+  {% if category.name != "none" %}
   <div class="m-1">
     <h4>{{ category.name }}</h4>
     {% for doc in category.items %}
