@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Adding Plugins
-permalink: /add
+category: Publishing
 ---
 
 # How to add your plugins
