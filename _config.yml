@@ -4,7 +4,7 @@ url: "https://ChatSurfApp.github.io"
 nav:
     - name: Categories
       url: /plugins/categories
-    - name: Adding Plugins
+    - name: Developers
       url: /plugins/add
 
 collections:
