@@ -14,3 +14,6 @@ collections:
     categories:
         output: true
         permalink: /categories/:name
+    developers:
+        output: true
+        permalink: /developers/:name
