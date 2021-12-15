@@ -3,7 +3,7 @@ layout: none
 ---
 [{% for plugin in site.plugins %}
   {
-    "id": "{{ plugin.name }}",
+    "id": "{{ plugin.url | split: "/" | last }}",
     "name": "{{ plugin.title }}",
     "author": {
       "name": "{{ plugin.author }}",
