@@ -3,7 +3,8 @@ layout: none
 ---
 [{% for plugin in site.plugins %}
   {
-    "title": "{{ plugin.title }}",
+    "id": "{{ plugin.name }}",
+    "name": "{{ plugin.title }}",
     "author": {
       "name": "{{ plugin.author }}",
       "verified": {% if plugin.verified %}true{% else %}false{% endif %}
@@ -11,6 +12,8 @@ layout: none
     "recommended": {% if plugin.recommended %}true{% else %}false{% endif %},
     "version": "{{ plugin.version }}",
     "category": "{{ plugin.category }}",
-    "description": {{ plugin.description | jsonify }}
+    "description": {{ plugin.description | jsonify }},
+    "html_url": "{{ plugin.url | absolute_url }}",
+    "download_url": "{{ plugin.url | absolute_url }}.js"
   }{% if forloop.rindex != 1 %},{% endif %}{% endfor %}
 ]
