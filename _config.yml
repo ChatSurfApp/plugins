@@ -5,7 +5,7 @@ nav:
     - name: Categories
       url: /plugins/categories
     - name: Developers
-      url: /plugins/add
+      url: /plugins/developers
 
 collections:
     plugins:
