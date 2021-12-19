@@ -22,7 +22,7 @@ layout: base
         {% endif %}
       </p>
       <a href="{{ plugin.url | relative_url }}" class="btn btn-primary">View</a>
-      <a href="{{ plugin.url | relative_url }}.js" class="btn btn-primary" download>Download</a>
+      <a href="{{ plugin.url | relative_url }}?download" class="btn btn-primary">Download</a>
     </div>
   </div>
 {% endif %}

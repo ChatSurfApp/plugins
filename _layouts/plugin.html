@@ -10,9 +10,32 @@ layout: base
   </ol>
 </nav>
 
+<div id="dlmodal" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Download {{ page.title }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Got ChatSurf CLI? Run:</h6>
+        {% highlight bash %}chatsurf-cli install {{ page.url | split: "/" | last }}{% endhighlight %}
+        
+        <h6>Don't have ChatSurf CLI?</h6>
+        Install it:
+        {% highlight bash %}npm i -g chatsurf-cli{% endhighlight %}
+        Or <a href="{{ page.url | relative_url }}.js" download>download .js file</a>.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <h1>
   {{ page.title }}
-  <a href="{{ page.url | relative_url }}.js" class="btn btn-primary" download>Download</a>
+  <button class="btn btn-primary" onclick="download()">Download</button>
 </h1>
 <p>
   By {{ page.author }}
@@ -31,4 +54,17 @@ layout: base
         theme="github-light"
         crossorigin="anonymous"
         async>
+</script>
+
+<script>
+  var dlmodal = new bootstrap.Modal(document.getElementById('dlmodal'));
+  var Qs = new URLSearchParams(location.search);
+  
+  if (Qs.has("download")) {
+    download();
+  }
+  
+  function download() {
+    dlmodal.show();
+  }
 </script>

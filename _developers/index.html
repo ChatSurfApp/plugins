@@ -10,7 +10,7 @@ permalink: /developers
 <div class="d-flex flex-wrap">
   {% for category in categories %}
   {% if category.name != "none" %}
-  <div class="m-1">
+  <div class="m-1 d-flex flex-column">
     <h4>{{ category.name }}</h4>
     {% for doc in category.items %}
     <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>

@@ -4,3 +4,7 @@
 $primary: #3a1585;
 
 @import "bootstrap";
+
+table {
+  @extend .table;
+}
