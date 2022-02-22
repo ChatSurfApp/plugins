@@ -1,7 +1,0 @@
-:100644 100644 e8da5bc 0000000 M	_developers/index.html
-:100644 100644 d061a99 0000000 M	_layouts/category.html
-:100644 100644 9b5acb6 0000000 M	_layouts/plugin.html
-:100644 100644 081fda7 0000000 M	_plugins/chatsurf-mod.js
-:100644 100644 2761914 0000000 M	_plugins/chatsurf-mod.md
-:100644 100644 daa1c28 0000000 M	assets/css/main.scss
-:100644 100644 7260929 0000000 M	index.html
